@@ -4,7 +4,7 @@
 
 # Collisions
 
-# ported by: hirtiganto
+# ported by: Jakub Pustelnik
 
 class Mover:
     loc = None

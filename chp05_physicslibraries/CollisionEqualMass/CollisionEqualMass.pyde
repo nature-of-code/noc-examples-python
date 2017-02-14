@@ -8,7 +8,7 @@
 
 # A Thing class for idealized collisions
 
-# ported by: hirtiganto
+# ported by: Jakub Pustelnik
 
 from Mover import Mover
 
