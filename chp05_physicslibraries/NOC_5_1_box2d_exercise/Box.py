@@ -6,11 +6,6 @@
 
 # A rectangular box
 class Box:
-    x = None
-    y = None
-    w = None
-    h = None
-    
     # Constructor
     def __init__(self, x, y):
         self.x = x
