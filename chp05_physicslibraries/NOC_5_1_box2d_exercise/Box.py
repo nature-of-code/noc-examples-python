@@ -6,13 +6,13 @@
 
 # A rectangular box
 class Box:
-    # Constructor
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
         self.w = 16
         self.h = 16
-    
+
     # Drawing the box
     def display(self):
         fill(127)
@@ -20,4 +20,3 @@ class Box:
         strokeWeight(2)
         rectMode(CENTER)
         rect(self.x, self.y, self.w, self.h)
-        
