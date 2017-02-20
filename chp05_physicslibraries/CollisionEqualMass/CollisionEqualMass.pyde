@@ -12,9 +12,6 @@
 
 from Mover import Mover
 
-a = None
-b = None
-
 showVectors = True
 
 def setup():

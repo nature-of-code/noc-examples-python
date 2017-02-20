@@ -7,15 +7,12 @@
 # ported by: Jakub Pustelnik
 
 class Mover:
-    loc = None
-    vel = None
-    bounce = 1.0
-    r = 20
-    colliding = False
-    
     def __init__(self, v, l):
         self.vel = v.copy()
         self.loc = l.copy()
+        self.bounce = 1.0
+        self.r = 20
+        self.colliding = False
     
     # Main method to operate object
     def go(self, s):
@@ -63,14 +60,16 @@ class Mover:
         translate(pos.x, pos.y)
         stroke(0)
     
-        # Call vector heading function to get direction (note that pointing up is a heading of 0) and rotate
+        # Call vector heading function to get direction 
+        # (note that pointing up is a heading of 0) and rotate
         rotate(v.heading())
     
         # Calculate length of vector & scale it to be bigger or smaller if necessary
         # len is renamed to leng because len is a python key word
         leng = v.mag() * scayl
     
-        # Draw three lines to make an arrow (draw pointing up since we've rotate to the proper direction)
+        # Draw three lines to make an arrow 
+        # (draw pointing up since we've rotate to the proper direction)
         line(0, 0, leng, 0)
         line(leng, 0, leng - arrowsize, +arrowsize / 2)
         line(leng, 0, leng - arrowsize, -arrowsize / 2)
@@ -98,16 +97,18 @@ class Mover:
             # Other component
             u.sub(un)
             
-            # These are the new velocities plus the velocity of the object we consider as stastionary
+            # These are the new velocities plus the velocity
+            # of the object we consider as stastionary
             self.vel = PVector.add(u, other.vel)
             other.vel = PVector.add(un, other.vel)
         elif d > sumR:
             self.colliding = False
 
 def componentVector(vector, directionVector):
-    #--! ARGUMENTS: vector, directionVector (2D vectors)
-    #--! RETURNS: the component vector of vector in the direction directionVector
-    #-- normalize directionVector
+    # The function arguments are vector, directionVector (2D vectors), and it
+    # returns the component vector of vector in the direction directionVector.
+    
+    # normalize directionVector
     directionVector.normalize()
     directionVector.mult(vector.dot(directionVector))
     
@@ -122,14 +123,16 @@ def drawVector(self, v, pos, scayl):
     translate(pos.x, pos.y)
     stroke(0)
     
-    # Call vector heading function to get direction (note that pointing up is a heading of 0) and rotate
+    # Call vector heading function to get direction
+    # (note that pointing up is a heading of 0) and rotate
     rotate(v.heading())
     
     # Calculate length of vector & scale it to be bigger or smaller if necessary
     # len is renamed to leng because len is a python key word
     leng = v.mag() * float(scayl)
     
-    # Draw three lines to make an arrow (draw pointing up since we've rotate to the proper direction)
+    # Draw three lines to make an arrow (draw pointing up since 
+    # we've rotate to the proper direction)
     line(0, 0, leng, 0)
     line(leng, 0, leng - arrowsize, +arrowsize / 2)
     line(leng, 0, leng - arrowsize, -arrowsize / 2)
