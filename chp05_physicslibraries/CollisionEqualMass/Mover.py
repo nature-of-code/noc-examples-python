@@ -139,3 +139,5 @@ def drawVector(self, v, pos, scayl):
     line(0, 0, leng, 0)
     line(leng, 0, leng - arrowsize, +arrowsize / 2)
     line(leng, 0, leng - arrowsize, -arrowsize / 2)
+
+    popMatrix()
