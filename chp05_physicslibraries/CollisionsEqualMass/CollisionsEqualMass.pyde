@@ -10,7 +10,7 @@
 
 # ported by: Jakub Pustelnik
 
-from Mover import Mover
+from mover import Mover
 
 showVectors = True
 

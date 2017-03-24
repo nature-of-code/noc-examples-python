@@ -3,7 +3,7 @@
 # http://natureofcode.com
 
 # ported by: Jakub Pustelnik
-from Box import Box
+from box import Box
 
 # A list for all of our rectangles
 boxes = []
