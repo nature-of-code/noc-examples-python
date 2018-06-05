@@ -88,7 +88,4 @@ class CA():
 
     # The CA is done if it reaches the bottom of the screen
     def finished(self):
-        if self.generation > height / CA.w:
-            return True
-        else:
-            return False
+        return self.generation > height / CA.w
