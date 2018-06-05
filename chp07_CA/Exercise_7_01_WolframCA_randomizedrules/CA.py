@@ -65,7 +65,7 @@ class CA():
     
     # This would be the concise conversion to binary way
     # def rules(self, a, b, c):
-    #     return self.ruleset[7 - (a<<2 | ~b<<1 | ~c)]    
+    #     return self.ruleset[a<<2 | b<<1 | c]    
     
     def rules(self, a, b, c):
         ruleset = self.ruleset
