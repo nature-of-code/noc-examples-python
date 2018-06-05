@@ -67,7 +67,7 @@ class CA():
     # def rules(self, a, b, c):
     #     return self.ruleset[7 - (a<<2 | ~b<<1 | ~c)]    
     
-     def rules(self, a, b, c):
+    def rules(self, a, b, c):
         ruleset = self.ruleset
         if a == 1 and b == 1 and c == 1:
             return ruleset[0]
