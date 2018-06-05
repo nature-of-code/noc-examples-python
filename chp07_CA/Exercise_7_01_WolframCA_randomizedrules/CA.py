@@ -62,9 +62,10 @@ class CA():
     # Implementing the Wolfram rules
     # This is the concise conversion to binary way
     # def rules(self, a, b, c):
-    #     s = str(a) + str(b) + str(c)
-    #     index = int(s, 2)
-    #     return self.ruleset[index]
+    #     return self.ruleset[7 - (a<<2 | ~b<<1 | ~c)]    
+    
+    # Shifmman's implementation orders the 8th position rule first
+    # http://mathworld.wolfram.com/ElementaryCellularAutomaton.html
     
     def rules(self, a, b, c):
         ruleset = self.ruleset
