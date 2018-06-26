@@ -1,14 +1,14 @@
 # The Nature of Code
 # Daniel Shiffman
-# http:#natureofcode.com
+# http://natureofcode.com
 
 # Seeking "vehicle" follows the mouse position
 
 # Implements Craig Reynold's autonomous steering behaviors
 # One vehicle "seeks"
-# See: http:#www.red3d.com/cwr/
+# See: http://www.red3d.com/cwr/
 
-from Vehicle import Vehicle
+from vehicle import Vehicle
 
 def setup():
     global v

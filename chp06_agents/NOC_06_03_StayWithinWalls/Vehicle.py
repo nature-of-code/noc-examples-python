@@ -1,6 +1,6 @@
 # The Nature of Code
 # Daniel Shiffman
-# http:#natureofcode.com
+# http://natureofcode.com
 
 # The "Vehicle" class
 

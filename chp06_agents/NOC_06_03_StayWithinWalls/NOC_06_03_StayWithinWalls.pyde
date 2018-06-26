@@ -1,11 +1,11 @@
 # The Nature of Code
 # Daniel Shiffman
-# http:#natureofcode.com
+# http://natureofcode.com
 
 # Stay Within Walls
 # "Made-up" Steering behavior to stay within walls
 
-from Vehicle import Vehicle
+from vehicle import Vehicle
 
 debug = True
 d = 25

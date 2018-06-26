@@ -1,6 +1,6 @@
 # The Nature of Code
 # Daniel Shiffman
-# http:#natureofcode.com
+# http://natureofcode.com
 
 # The "Vehicle" class
 
@@ -37,7 +37,6 @@ class Vehicle():
         # Scale to maximum speed
         desired.setMag(self.maxspeed)
 
-        # Steering = Desired minus velocity
         steer = desired - self.velocity
         steer.limit(self.maxforce)  # Limit to maximum steering force
 
