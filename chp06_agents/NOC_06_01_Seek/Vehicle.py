@@ -5,7 +5,8 @@
 # The "Vehicle" class
 
 class Vehicle():
-    def __init__(self,x, y):
+
+    def __init__(self, x, y):
         self.acceleration = PVector(0, 0)
         self.velocity = PVector(0, -2)
         self.position = PVector(x, y)

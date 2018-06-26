@@ -25,9 +25,9 @@ def draw():
         rectMode(CENTER)
         rect(width / 2, height / 2, width - d * 2, height - d * 2)
 
-    v.boundaries(d)  
+    v.boundaries(d)
     v.run()
-    
+
 def mousePressed():
     global debug
     debug = not debug

@@ -13,7 +13,7 @@ class Vehicle():
         self.r = 6
         self.maxspeed = 3
         self.maxforce = 0.15
-        
+
     def run(self):
         self.update()
         self.display()
