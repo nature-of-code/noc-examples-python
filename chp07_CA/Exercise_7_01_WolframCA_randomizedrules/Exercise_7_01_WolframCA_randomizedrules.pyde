@@ -9,7 +9,7 @@
 # Mouse click restarts as well
 
 # import CA a class to describe a Wolfram elementary Cellular Automata
-from CA import *
+from CA import CA
 
 delay = 0
 
