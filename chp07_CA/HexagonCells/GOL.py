@@ -2,7 +2,7 @@
 # Daniel Shiffman
 # http://natureofcode.com
 
-from Cell import *
+from cell import Cell
 
 class GOL():
 
