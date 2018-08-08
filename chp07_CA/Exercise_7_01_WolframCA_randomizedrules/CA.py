@@ -8,13 +8,13 @@
 
 class CA():
 
-    w = 5
+    WIDTH = 5
 
     def __init__(self, r):
         # A list to store the ruleset, for example:0,1,1,0,1,1,0,1
         self.ruleset = r
         # A list of 0s and 1s
-        self.cells = [0] * (width / CA.w)
+        self.cells = [0] * (width / CA.WIDTH)
         self.restart()
 
     # Make a random ruleset
@@ -57,7 +57,7 @@ class CA():
             else:
                 fill(255)
             noStroke()
-            rect(i * CA.w, self.generation * CA.w, CA.w, CA.w)
+            rect(i * CA.WIDTH, self.generation * CA.WIDTH, CA.WIDTH, CA.WIDTH)
 
     # Implementing the Wolfram rules
     # The convention is to put the 111 rule rule first, and 000 last
@@ -89,4 +89,4 @@ class CA():
 
     # The CA is done if it reaches the bottom of the screen
     def finished(self):
-        return self.generation > height / CA.w
+        return self.generation > height / CA.WIDTH
