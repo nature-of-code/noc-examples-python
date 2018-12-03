@@ -12,7 +12,7 @@
 
 # Cells wrap around
 
-from GOL import *
+from GOL import GOL
 
 def setup():
     global gol

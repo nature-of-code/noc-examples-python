@@ -8,13 +8,13 @@
 
 class CA():
 
-    WIDTH = 5
+    cell_size = 5
 
     def __init__(self, r):
         # A list to store the ruleset, for example:0,1,1,0,1,1,0,1
         self.ruleset = r
         # A list of 0s and 1s
-        self.cells = [0] * (width / CA.WIDTH)
+        self.cells = [0] * (width / CA.cell_size)
         self.restart()
 
     # Make a random ruleset
@@ -57,16 +57,19 @@ class CA():
             else:
                 fill(255)
             noStroke()
-            rect(i * CA.WIDTH, self.generation * CA.WIDTH, CA.WIDTH, CA.WIDTH)
+            rect(i * CA.cell_size,
+                 self.generation * CA.cell_size,
+                 CA.cell_size,
+                 CA.cell_size)
 
     # Implementing the Wolfram rules
     # The convention is to put the 111 rule rule first, and 000 last
     # http://mathworld.wolfram.com/ElementaryCellularAutomaton.html
-    
+
     # This would be the concise conversion to binary way
     # def rules(self, a, b, c):
-    #     return self.ruleset[a<<2 | b<<1 | c]    
-    
+    #     return self.ruleset[a<<2 | b<<1 | c]
+
     def rules(self, a, b, c):
         ruleset = self.ruleset
         if a == 1 and b == 1 and c == 1:
@@ -89,4 +92,4 @@ class CA():
 
     # The CA is done if it reaches the bottom of the screen
     def finished(self):
-        return self.generation > height / CA.WIDTH
+        return self.generation > height / CA.cell_size

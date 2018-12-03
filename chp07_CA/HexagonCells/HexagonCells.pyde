@@ -5,7 +5,7 @@
 # Outline for game of life 
 # This is just a grid of hexagons right now
 
-from GOL import *
+from GOL import GOL
 
 def setup():
     global gol

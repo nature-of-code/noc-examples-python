@@ -4,12 +4,12 @@
 
 class GOL():
 
-    W = 8
+    cell_size = 8
 
     def __init__(self):
         # Initialize self.rows, self.cols and set-up a list of lists
-        self.cols = width / GOL.W
-        self.rows = height / GOL.W
+        self.cols = width / GOL.cell_size
+        self.rows = height / GOL.cell_size
         # Game of life board
         self.board = [[0] * self.rows for _ in range(self.cols)]
         # Call function to fill array with random values 0 or 1
@@ -64,4 +64,7 @@ class GOL():
                 else:
                     fill(255)
                 stroke(0)
-                rect(i * GOL.W, j * GOL.W, GOL.W, GOL.W)
+                rect(i * GOL.cell_size,
+                     j * GOL.cell_size,
+                     GOL.cell_size,
+                     GOL.cell_size)
